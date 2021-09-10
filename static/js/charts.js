@@ -95,6 +95,7 @@ function buildCharts(sample) {
       x: sortedValues,
       y: yticks,
       text: sortedLabels,
+      marker: {color: 'rgb(162, 217, 206)'},
       type: "bar",
       orientation: "h"
     }];
@@ -104,7 +105,8 @@ function buildCharts(sample) {
       yaxis: {
         autotick: false,
         type: 'category'
-      }
+      },
+      font: {color: 'rgb(86, 101, 115'}
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
@@ -146,16 +148,17 @@ function buildCharts(sample) {
       type: "indicator",
       mode: "gauge+number",
       title: {text: '<b>Belly Button Washing Frequency</b>' +
-                    '<br>Scrubs per Week'},
+                    '<br>Scrubs per Week'
+              },
       gauge: {
         axis: { range: [null, 10] },
-        bar: {color: "black"},
+        bar: {color: "rgb(162, 217, 206)"},
         steps: [
-          { range: [0, 2], color: "red" },
-          { range: [2, 4], color: "orange" },
-          { range: [4, 6], color: "yellow" },
-          { range: [6, 8], color: "lightgreen" },
-          { range: [8, 10], color: "green" }
+          { range: [0, 2], color: "rgb(244, 236, 247)" },
+          { range: [2, 4], color: "rgb(210, 180, 222)" },
+          { range: [4, 6], color: "rgb(187, 143, 206)" },
+          { range: [6, 8], color: "rgb(165, 105, 189)" },
+          { range: [8, 10], color: "rgb(125, 60, 152)" }
         ]
       }  
     }];
@@ -164,7 +167,8 @@ function buildCharts(sample) {
     var gaugeLayout = { 
       width: 550, 
       height: 450, 
-      margin: { t: 0, b: 0}
+      margin: { t: 0, b: 0},
+      font: {color: 'rgb(86, 101, 115)'}
     };
 
     // 6. Use Plotly to plot the gauge data and layout.
