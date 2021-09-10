@@ -3,7 +3,7 @@ function init() {
   var selector = d3.select("#selDataset");
 
   // Use the list of sample names to populate the select options
-  d3.json("static/js/samples.json").then((data) => {
+  d3.json("samples.json").then((data) => {
     var sampleNames = data.names;
 
     sampleNames.forEach((sample) => {
