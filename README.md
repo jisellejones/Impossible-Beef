@@ -13,3 +13,5 @@ The purpose of this project was to create a web page where participants in a stu
   - d3.js Version 5.5.0
   - Bootstrap 3.3.7
   - Git Pages
+
+*Repo Image by Elena Mozhvilo on Unsplash*
