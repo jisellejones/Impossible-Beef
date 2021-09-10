@@ -14,4 +14,4 @@ The purpose of this project was to create a web page where participants in a stu
   - Bootstrap 3.3.7
   - Git Pages
 
-*Repo Image by Elena Mozhvilo on Unsplash*
+## Repo Image by Elena Mozhvilo on Unsplash*
